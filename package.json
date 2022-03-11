@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server -p $PORT"
+    "start": "node ser_test"
   },
   "author": "",
   "license": "ISC",
