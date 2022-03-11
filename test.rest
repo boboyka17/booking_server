@@ -1,0 +1,51 @@
+GET http://localhost:3001/api/users
+
+###
+
+GET http://localhost:3001/api/users/6226d9793828706ef3d2056b
+
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+     "username":"user2",
+    "password": "123456789",
+    "firstname": "Pipat",
+    "lastname": "Buayai"
+}
+
+###
+
+DELETE http://localhost:3001/api/users/62258ee0269417b2e392a82a
+
+###
+
+PATCH  http://localhost:3001/api/users/6226d9793828706ef3d2056b
+
+Content-Type: application/json
+
+{
+    "firstname":"พิพัฒน์",
+    "lastname":"บัวใหญ่"
+}
+
+
+
+
+
+###
+
+GET http://localhost:3001/api/events
+
+###
+
+POST http://localhost:3001/api/events
+Content-Type: application/json
+
+{
+    "title":"title 2",
+    "eventDays": ["2022/2/24", "2022/2/25", "2022/2/28"],
+    "color":"#8e44ad"
+}
