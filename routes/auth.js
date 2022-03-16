@@ -1,4 +1,8 @@
 const express = require("express");
+const app = express();
+const cors = require("cors");
+app.use(cors());
+// cors fix
 const router = express.Router();
 const Users = require("../model/users");
 const bcrypt = require("bcrypt");
