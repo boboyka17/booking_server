@@ -1,8 +1,10 @@
-const PORT = process.env.PORT || 3000;
+require("dotenv").config();
+const PORT = process.env.PORT || 3001;
 const HOST = process.env.HOST || "0.0.0.0";
 const express = require("express");
 const app = express();
 const cors = require("cors");
+
 app.use(cors());
 
 // dp config
