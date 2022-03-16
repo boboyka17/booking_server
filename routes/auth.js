@@ -9,7 +9,7 @@ const ExtractJwt = require("passport-jwt").ExtractJwt;
 //ใช้ในการประกาศ Strategy
 const JwtStrategy = require("passport-jwt").Strategy;
 
-const SECRET = process.env.SECRET_KEY; //ในการใช้งานจริง คีย์นี้ให้เก็บเป็นความลับ
+const SECRET = process.env.SECRET_KEY || "8f157589fe26126bfe357cad0390f4f4"; //ในการใช้งานจริง คีย์นี้ให้เก็บเป็นความลับ
 
 //สร้าง Strategy
 const jwtOptions = {
