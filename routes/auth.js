@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 app.use(cors());
 // cors fix
+
 const router = express.Router();
 const Users = require("../model/users");
 const bcrypt = require("bcrypt");
@@ -40,9 +41,9 @@ passport.use(jwtAuth);
 const requireJWTAuth = passport.authenticate("jwt", { session: false });
 
 //เสียบ middleware ยืนยันตัวตน JWT เข้าไป
-router.get("/auth", requireJWTAuth, (req, res) => {
-  res.send({ status: "Authorized" });
-});
+// router.get("/auth", requireJWTAuth, (req, res) => {
+//   res.send({ status: "Authorized" });
+// });
 
 const login = async (req, res, next) => {
   try {
