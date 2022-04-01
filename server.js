@@ -18,11 +18,15 @@ app.use(express.json());
 // route setting
 const users = require("./routes/users");
 const events = require("./routes/events");
+const booking = require("./routes/booking");
 const auth = require("./routes/auth");
+const customer = require("./routes/customer");
 
 app.use("/api", users);
 app.use("/api", events);
 app.use("/api", auth);
+app.use("/api", booking);
+app.use("/api", customer);
 
 app.listen(PORT, HOST, () => {
   console.log("Server started on " + HOST + ":" + PORT);
